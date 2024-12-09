@@ -1,0 +1,303 @@
+$tableParams = @'
+{
+    "properties": {
+        "schema": {
+            "name": "Crowstrike_Additional_CL",
+            "columns": [
+                {
+                    "name": "TimeGenerated",
+                    "type": "DateTime",
+                    "isDefaultDisplay": true,
+                    "description": "The timestamp (UTC) reflecting the time in which the event was generated."
+                },
+                {
+                    "name": "event_simpleName",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "long"
+                },
+                {
+                    "name": "aip",
+                    "type": "string"
+                },
+                {
+                    "name": "aid",
+                    "type": "string"
+                },
+                {
+                    "name": "event_platform",
+                    "type": "string"
+                },
+                {
+                    "name": "ConfigStateHash",
+                    "type": "string"
+                },
+                {
+                    "name": "ContextProcessId",
+                    "type": "string"
+                },
+                {
+                    "name": "BoundingLimitCount",
+                    "type": "long"
+                },
+                {
+                    "name": "ConfigBuild",
+                    "type": "string"
+                },
+                {
+                    "name": "Entitlements",
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "CrowdStrikeId",
+                    "type": "string"
+                },
+                {
+                    "name": "EffectiveTransmissionClass",
+                    "type": "string"
+                },
+                {
+                    "name": "cid",
+                    "type": "string"
+                },
+                {
+                    "name": "SystemUptimeSeconds",
+                    "type": "long"
+                },
+                {
+                    "name": "ContextTimeStamp",
+                    "type": "real"
+                },
+                {
+                    "name": "TamperFilterFlags",
+                    "type": "string"
+                },
+                {
+                    "name": "LogonType",
+                    "type": "string"
+                },
+                {
+                    "name": "UserPrincipal",
+                    "type": "string"
+                },
+                {
+                    "name": "UserIsAdmin",
+                    "type": "string"
+                },
+                {
+                    "name": "UserName",
+                    "type": "string"
+                },
+                {
+                    "name": "SuppressType",
+                    "type": "string"
+                },
+                {
+                    "name": "ProcessCount",
+                    "type": "long"
+                },
+                {
+                    "name": "EtwTargetRawProcessId",
+                    "type": "string"
+                },
+                {
+                    "name": "MinorFunction",
+                    "type": "string"
+                },
+                {
+                    "name": "FileObject",
+                    "type": "string"
+                },
+                {
+                    "name": "IrpFlags",
+                    "type": "string"
+                },
+                {
+                    "name": "MajorFunction",
+                    "type": "string"
+                },
+                {
+                    "name": "OperationFlags",
+                    "type": "string"
+                },
+                {
+                    "name": "SignatureErrorState",
+                    "type": "string"
+                },
+                {
+                    "name": "SHA1HashData",
+                    "type": "string"
+                },
+                {
+                    "name": "SignatureState",
+                    "type": "string"
+                },
+                {
+                    "name": "AuthenticodeHashData",
+                    "type": "string"
+                },
+                {
+                    "name": "ToBeSignedAlgorithm",
+                    "type": "string"
+                },
+                {
+                    "name": "ToBeSignedHash",
+                    "type": "string"
+                },
+                {
+                    "name": "SignInfoRequestFlags",
+                    "type": "string"
+                },
+                {
+                    "name": "SignerInfoCount",
+                    "type": "long"
+                },
+                {
+                    "name": "HashAlgorithm",
+                    "type": "string"
+                },
+                {
+                    "name": "RegObjectName",
+                    "type": "string"
+                },
+                {
+                    "name": "RegValueName",
+                    "type": "string"
+                },
+                {
+                    "name": "RegType",
+                    "type": "string"
+                },
+                {
+                    "name": "RegClassificationIndex",
+                    "type": "string"
+                },
+                {
+                    "name": "RegClassificationFlags",
+                    "type": "string"
+                },
+                {
+                    "name": "RegOperationType",
+                    "type": "string"
+                },
+                {
+                    "name": "RegClassification",
+                    "type": "string"
+                },
+                {
+                    "name": "RegStringValue",
+                    "type": "string"
+                },
+                {
+                    "name": "Facility",
+                    "type": "string"
+                },
+                {
+                    "name": "File",
+                    "type": "string"
+                },
+                {
+                    "name": "BatchTimestamp",
+                    "type": "real"
+                },
+                {
+                    "name": "SpotlightBatchType",
+                    "type": "string"
+                },
+                {
+                    "name": "LastUpdateInstalledTime",
+                    "type": "string"
+                },
+                {
+                    "name": "PendingUpdateIds",
+                    "type": "string"
+                },
+                {
+                    "name": "LastPendingUpdateInstalledTime",
+                    "type": "string"
+                },
+                {
+                    "name": "InstalledUpdateIds",
+                    "type": "string"
+                },
+                {
+                    "name": "InstalledUpdateExtendedStatus",
+                    "type": "string"
+                },
+                {
+                    "name": "UninstallPendingUpdateIds",
+                    "type": "string"
+                },
+                {
+                    "name": "RawTargetProcessId",
+                    "type": "string"
+                },
+                {
+                    "name": "TargetThreadId",
+                    "type": "string"
+                },
+                {
+                    "name": "ApcContextFileName",
+                    "type": "string"
+                },
+                {
+                    "name": "RawTargetThreadId",
+                    "type": "string"
+                },
+                {
+                    "name": "FirmwareAnalysisErrorLocation",
+                    "type": "string"
+                },
+                {
+                    "name": "FirmwareAnalysisErrorSource",
+                    "type": "string"
+                },
+                {
+                    "name": "FirmwareAnalysisErrorReason",
+                    "type": "string"
+                },
+                {
+                    "name": "InjectedThreadFlag",
+                    "type": "string"
+                },
+                {
+                    "name": "ApcFlags",
+                    "type": "string"
+                },
+                {
+                    "name": "DownloadServer",
+                    "type": "string"
+                },
+                {
+                    "name": "DownloadPath",
+                    "type": "string"
+                },
+                {
+                    "name": "DownloadPort",
+                    "type": "string"
+                },
+                {
+                    "name": "RemediationTriggerTimeStamp",
+                    "type": "real"
+                },
+                {
+                    "name": "VolumeMountPoint",
+                    "type": "string"
+                },
+                {
+                    "name": "VolumeDriveLetter",
+                    "type": "string"
+                }
+            ]
+        }
+    },
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/2eff1c6d-f789-4be8-ab50-33d5b116d7a5/resourcegroups/sentinel_operations/providers/microsoft.operationalinsights/workspaces/SENTINEL-Equitable-LogAnalyticsWorkspace/tables/Crowstrike_Additional_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
