@@ -1,0 +1,20 @@
+$tableParams = @'
+{
+    "properties": {
+        "schema": {
+            "name": "Crowdstrike_Secondary_Table_CL",
+            "columns": [
+                {
+                    "name": "TimeGenerated",
+                    "type": "DateTime",
+                    "isDefaultDisplay": true,
+                    "description": "The timestamp (UTC) reflecting the time in which the event was generated."
+                },
+                {
+                    "name": "event_simpleName",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "long"
+                }
