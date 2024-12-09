@@ -2,7 +2,7 @@ $tableParams = @'
 {
     "properties": {
         "schema": {
-            "name": "CrowdStrike_Audit_Events_CL",
+            "name": "Crowdstrike_Secondary_Table_CL",
                   "columns": [
                     {
                       "name": "TimeGenerated",
