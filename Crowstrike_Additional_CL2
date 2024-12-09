@@ -2,7 +2,7 @@ $tableParams = @'
 {
     "properties": {
         "schema": {
-            "name": "Crowstrike_Additional_CL",
+            "name": "Crowdstrike_Additional_CL",
             "columns": [
                 {
                     "name": "TimeGenerated",
@@ -300,4 +300,4 @@ $tableParams = @'
     "plan": "Analytics"
 }
 '@
-Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Crowstrike_Additional_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Crowdstrike_Additional_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
