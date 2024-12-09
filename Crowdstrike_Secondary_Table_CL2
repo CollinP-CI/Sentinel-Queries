@@ -1,3 +1,4 @@
+$tableParams = @'
 {
     "properties": {
         "schema": {
@@ -450,3 +451,5 @@
     },
     "plan": "Analytics"
 }
+'@
+Invoke-AzRestMethod -Path "/subscriptions/2eff1c6d-f789-4be8-ab50-33d5b116d7a5/resourcegroups/sentinel_operations/providers/microsoft.operationalinsights/workspaces/SENTINEL-Equitable-LogAnalyticsWorkspace/tables/CrowdStrike_Audit_Events_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
