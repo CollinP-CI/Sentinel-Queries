@@ -62,14 +62,14 @@
             "type": "Bool"
         },
         "dcr-raw-data_name_input": {
-            "defaultValue": "crowdstrike-fdr-dcr-rawdata-us-east",
+            "defaultValue": "",
             "type": "String",
             "metadata": {
                 "description": "Default name will be ms-sentinel-rawdata-dcr-[function-name]-[LA-Region], no need to enter if you want to use default names"
             }
         },
         "dcr-normalized-data_name_input": {
-            "defaultValue": "crowdstrike-fdr-dcr-ncrowdstrike-fdr-dcr-rawdata-us-east-useast",
+            "defaultValue": "",
             "type": "String",
             "metadata": {
                 "description": "Default name will be ms-sentinel-normdata-dcr-[function-name]-[LA-Region], no need to enter if you want to use default names"
