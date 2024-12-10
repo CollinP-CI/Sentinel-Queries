@@ -61,6 +61,20 @@
             ],
             "type": "Bool"
         },
+        "dcr-raw-data_name_input": {
+            "defaultValue": "",
+            "type": "String",
+            "metadata": {
+                "description": "Default name will be ms-sentinel-rawdata-dcr-[function-name]-[LA-Region], no need to enter if you want to use default names"
+            }
+        },
+        "dcr-normalized-data_name_input": {
+            "defaultValue": "",
+            "type": "String",
+            "metadata": {
+                "description": "Default name will be ms-sentinel-normdata-dcr-[function-name]-[LA-Region], no need to enter if you want to use default names"
+            }
+        },
         "function-name": {
             "defaultValue": "csfdr01",
             "type": "String"
@@ -4994,7 +5008,7 @@
             "properties": {
                 "dataCollectionEndpointId": "[resourceId(subscription().subscriptionId, resourceGroup().name, 'Microsoft.Insights/dataCollectionEndpoints', variables('dce-name'))]",
                 "streamDeclarations": {
-                    "Custom-CrowdstrikeDns": {
+                    "Custom-CrowdStrikeDNS": {
                         "columns": [
                             {
                                 "name": "event_simpleName",
@@ -5138,7 +5152,7 @@
                             }
                         ]
                     },
-                    "Custom-CrowdstrikeFile": {
+                    "Custom-CrowdStrikeFile": {
                         "columns": [
                             {
                                 "name": "event_simpleName",
@@ -5418,7 +5432,7 @@
                             }
                         ]
                     },
-                    "Custom-CrowdstrikeNetwork": {
+                    "Custom-CrowdStrikeNetwork": {
                         "columns": [
                             {
                                 "name": "event_simpleName",
@@ -5674,7 +5688,7 @@
                             }
                         ]
                     },
-                    "Custom-CrowdstrikeAudit": {
+                    "Custom-CrowdStrikeAudit": {
                         "columns": [
                             {
                                 "name": "event_simpleName",
@@ -6125,7 +6139,7 @@
                     "dataFlows": [
                         {
                             "streams": [
-                                "Custom-CrowdstrikeNetwork"
+                                "Custom-CrowdStrikeNetwork"
                             ],
                             "destinations": [
                                 "myworkspace"
@@ -6135,7 +6149,7 @@
                         },
                         {
                             "streams": [
-                                "Custom-CrowdstrikeDns"
+                                "Custom-CrowdStrikeDNS"
                             ],
                             "destinations": [
                                 "myworkspace"
@@ -6145,7 +6159,7 @@
                         },
                         {
                             "streams": [
-                                "Custom-CrowdstrikeFile"
+                                "Custom-CrowdStrikeFile"
                             ],
                             "destinations": [
                                 "myworkspace"
@@ -6155,7 +6169,7 @@
                         },
                         {
                             "streams": [
-                                "Custom-CrowdstrikeAudit"
+                                "Custom-CrowdStrikeAudit"
                             ],
                             "destinations": [
                                 "myworkspace"
@@ -6180,7 +6194,7 @@
                             "properties": {
                                 "dataCollectionEndpointId": "[resourceId(subscription().subscriptionId,resourceGroup().name,'Microsoft.Insights/dataCollectionEndpoints', variables('dce-name'))]",
                                 "streamDeclarations": {
-                                    "Custom-CrowdstrikeDns": {
+                                    "Custom-CrowdStrikeDNS": {
                                         "columns": [
                                             {
                                                 "name": "event_simpleName",
@@ -6260,7 +6274,7 @@
                                             }
                                         ]
                                     },
-                                    "Custom-CrowdstrikeFile": {
+                                    "Custom-CrowdStrikeFile": {
                                         "columns": [
                                             {
                                                 "name": "event_simpleName",
@@ -6376,7 +6390,7 @@
                                             }
                                         ]
                                     },
-                                    "Custom-CrowdstrikeNetwork": {
+                                    "Custom-CrowdStrikeNetwork": {
                                         "columns": [
                                             {
                                                 "name": "event_simpleName",
@@ -6508,7 +6522,7 @@
                                             }
                                         ]
                                     },
-                                    "Custom-CrowdstrikeAudit": {
+                                    "Custom-CrowdStrikeAudit": {
                                         "columns": [
                                             {
                                                 "name": "event_simpleName",
@@ -6671,7 +6685,7 @@
                                     "dataFlows": [
                                         {
                                             "streams": [
-                                                "Custom-CrowdstrikeNetwork"
+                                                "Custom-CrowdStrikeNetwork"
                                             ],
                                             "destinations": [
                                                 "myworkspace"
@@ -6681,7 +6695,7 @@
                                         },
                                         {
                                             "streams": [
-                                                "Custom-CrowdstrikeDns"
+                                                "Custom-CrowdStrikeDNS"
                                             ],
                                             "destinations": [
                                                 "myworkspace"
@@ -6691,7 +6705,7 @@
                                         },
                                         {
                                             "streams": [
-                                                "Custom-CrowdstrikeFile"
+                                                "Custom-CrowdStrikeFile"
                                             ],
                                             "destinations": [
                                                 "myworkspace"
@@ -6701,7 +6715,7 @@
                                         },
                                         {
                                             "streams": [
-                                                "Custom-CrowdstrikeAudit"
+                                                "Custom-CrowdStrikeAudit"
                                             ],
                                             "destinations": [
                                                 "myworkspace"
