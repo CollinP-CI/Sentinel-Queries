@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "loganalyticsworkspace": {
-      "defaultValue": "<LogAnalyticsworkspaceName>",
+      "defaultValue": "enduserspreprod-sentinel-loganalyticsworkspace",
       "type": "string"
     },
     "loganalyticsworkspace-location": {
