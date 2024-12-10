@@ -97,7 +97,7 @@
         "cust-table-csdns": "CrowdStrike_DNS_Events_CL",
         "cust-table-csaudit": "CrowdStrike_Audit_Events_CL",
         "cust-table-additionaldata": "CrowdStrike_additionaldata_CL",
-        "cust-table-secondary": "CrowdStrike_Secondary_Data_CL",
+        "cust-table-secondary": "CrowdStrike_Secondary_Table_CL",
         "norm-table-csfile": "ASimFileEventLogs_CL",
         "norm-table-csprocess": "ASimProcessEventLogs_CL",
         "norm-table-csauth": "ASimAuthenticationEventLogs_CL",
