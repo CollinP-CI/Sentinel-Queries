@@ -7,18 +7,18 @@
       "type": "string"
     },
     "loganalyticsworkspace-location": {
-      "defaultValue": "<LogAnalyticsworkspaceLocation>",
+      "defaultValue": "eastus",
       "type": "string"
     },
     "loganalyticsworkspace-subscription": {
-      "defaultValue": "<LogAnalytics Subscription id>",
+      "defaultValue": "6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f",
       "type": "string",
       "metadata": {
         "description": "Guid value of subscription id e.g. '4383ac89-7cd1-48c1-8061-b0b3c5ccfd97'"
       }
     },
     "loganalyticsworkspace-resourceGroup": {
-      "defaultValue": "<LogAnalytics resourceGroup name>",
+      "defaultValue": "sentineltesting_rg",
       "type": "string"
     },
     "flag-raw-copy-normdata": {
@@ -54,7 +54,7 @@
       "type": "bool"
     },
     "input-dce-name": {
-      "defaultValue": "ms-sentinel-dce-centralus-csfdr01",
+      "defaultValue": "Cribl-Stream-Ingestion",
       "type": "string"
     },
     "dcr-raw-data_refresh_flag": {
@@ -70,14 +70,14 @@
       "type": "bool"
     },
     "dcr-raw-data_name_input": {
-      "defaultValue": "",
+      "defaultValue": "ms-sentinel-rawdata-dcr-csfdr01-eastus",
       "type": "string",
       "metadata": {
         "description": "Default name will be ms-sentinel-rawdata-dcr-[laregion]-csfdr[instance], no need to enter if you want to use default names"
       }
     },
     "dcr-normalized-data_name_input": {
-      "defaultValue": "",
+      "defaultValue": "ms-sentinel-normdata-dcr-csfdr01-eastus",
       "type": "string",
       "metadata": {
         "description": "Default name will be ms-sentinel-normdata-dcr-[laregion]-csfdr[instance], no need to enter if you want to use default names"
